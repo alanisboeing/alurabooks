@@ -1,0 +1,80 @@
+.banner{
+    background: var(--azul-degrade);
+    color: var(--branco);
+    padding: 2.5em 2em;
+    text-align: center;
+    align-items: center;
+}
+.titulo__banner{
+    font-weight: var(--font-weight-titulo);
+    font-size: 18px;
+}
+.texto-1__banner{
+    font-weight: 400;
+    padding: 1em 0;
+    line-height: 24px;
+}
+
+.input-campo-pesquisa{
+    background-color: transparent;
+    color: var(--branco);
+    width: 100%;
+    font-weight: 300;
+    font-size: 14px;
+    border: 1px solid var(--branco);
+    border-radius: 24px;
+    padding: 1em;
+}
+
+.input-campo-pesquisa::placeholder{
+    color: var(--branco);
+    background: url("../imagens/Pesquisa.svg");
+    background-repeat: no-repeat;
+    background-position: 2em;
+    font-weight: 300;
+    font-size: 14px;
+    padding: 0.5em 4.5em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+ }
+
+ @media screen and (min-width:768px){
+    .banner{
+        padding: 6em;
+        justify-content: center;
+    }
+    .titulo__banner{
+        font-size: 36px;
+    }
+    .input-campo-pesquisa{
+        width: 40%;
+        padding:1.3em
+    }
+    .input-campo-pesquisa::placeholder{
+       font-size: 16px;
+       align-items: center;
+    }
+    .texto-1__banner{
+        padding: 0;
+        padding-top: 1em;
+        padding-bottom: 1.5em;
+
+    }
+ }

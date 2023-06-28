@@ -1,0 +1,110 @@
+.container__novidades{
+    padding: 3em 1.5em;
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    justify-content: center;
+}
+.novidades{
+    background-color: var(--branco);
+}
+.titulo__novidades{
+    font-size: 18px;
+    font-weight: 500;
+}
+.texto__novidades{
+    font-weight: 300;
+    padding: 1.5em 0;
+}
+.email{
+    border: 1px solid var(--azul);
+    border-radius: 24px; 
+    padding: 1em;
+    display: flex;
+    box-sizing: border-box;
+    width:100%;
+    text-align: center;
+    background: transparent;
+}
+.email::placeholder{
+    text-align: justify;
+    padding-left: 2.5em;
+    font-size: 16px;
+    font-family: var(--font-family);
+    color: var(--azul);
+    background: url("../imagens/Email.svg");
+    background-repeat: no-repeat;
+    background-position: 0.5em;
+}
+/* rodape */
+.rodape{
+    border-top: 1px solid var(--preto);
+    background-color: var(--background-footer);
+    padding: 1.5em; 
+}
+.titulo__rodape{
+    color: var(--preto);
+}
+.lista-links{
+    display: none;
+}
+@media screen and (min-width: 768px){
+    .container__novidades{
+        /* display: grid;
+        grid-template-columns: 50% 50%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:3em
+    }
+    .email{
+        height:min-content ;
+        width: 30%;
+    }
+    .novidades{
+        justify-content: center;
+        
+    }
+    .titulo__novidades{
+        font-size: 24px;
+    }
+    .texto-container__novidades{
+        width: 35%;
+    }
+    .container__lista-links{
+        display: flex;
+        justify-content: space-between;
+        margin: 2em;
+
+    }
+    .lista-links{
+        display: block;
+        color: var(--cinza);
+        font-size: 14px;
+    }
+    .titulo__rodape{
+        font-size: 24px;
+    }
+    .item-lista-link img{
+        padding: 1em 0;
+    }
+    .titulo-lista-link{
+        text-transform: uppercase;
+        padding-bottom: 1.5em;
+    }
+    .rodape{
+        border-top: 1px solid var(--cinza);
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .lista-links{
+        border-left: 1px solid var(--cinza);
+        padding-left: 1em;
+    }
+    .container__lista-links{
+        margin:3em 10em;
+    }
+}
+    
